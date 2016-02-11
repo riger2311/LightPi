@@ -1,0 +1,105 @@
+@media screen and (orientation: landscape) {
+    html {
+        font-family: "Verdana", "Arial";
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .Light {
+        position: relative;
+        float: left;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        border: solid rgba(13, 13, 13, 0.8);
+        border-radius: 1.5rem;
+        background-color: rgba(26, 26, 26, 0.8);
+        margin: 1rem;
+        padding: 1rem;
+
+        min-width: 40%;
+        min-height: 18rem;
+
+    }
+
+    .ToggleLedForm {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .ColorPickerForm {
+        padding: 0.5rem 5rem;
+
+    }
+
+    #ColorPicker {
+
+    }
+
+    input {
+        min-width: 15rem;
+        min-height: 5rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        color: inherit;
+        background-color: rgba(28, 28, 28, 0.8);
+        border-color: rgba(13, 13, 13, 0.8);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    html {
+        font-family: "Verdana", "Arial";
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .Light {
+        position: relative;
+        float: left;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        border: solid rgba(13, 13, 13, 0.8);
+        border-radius: 1.5rem;
+        background-color: rgba(26, 26, 26, 0.8);
+        margin: 1rem;
+        padding: 1rem;
+
+        min-width: 90%;
+        /*min-height: 80%;*/
+
+    }
+
+    .ToggleLedForm {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .ColorPickerForm {
+        padding: 0.5rem 5rem;
+
+    }
+
+    #ColorPicker {
+
+    }
+
+    input {
+        min-width: 20rem;
+        min-height: 17rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        color: inherit;
+        background-color: rgba(28, 28, 28, 0.8);
+        border-color: rgba(13, 13, 13, 0.8);
+        font-size: 2.5rem;
+    }
+}
+

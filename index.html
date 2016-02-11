@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="controller.js"></script>
+    <title>LightPi</title>
+</head>
+<body>
+<div class="Light">
+  <h1>LED Spots</h1>
+    <form class="ToggleLedForm" method="post" action="/">
+        <input type="submit" id="toggle_led_button" value="Toggle LEDs">
+    </form>
+</div>
+
+<div class="Light">
+  <h1>Colored LEDs</h1>
+    <form class="ColorPickerForm">
+        <div id="ColorPicker">
+            <!--<canvas id="myCanvas" width="578" height="276"></canvas>-->
+        <input type="color" id="color_picker" name="color_picker">
+        </div>
+        <input type="submit" id="color_button" value="Color off">
+    </form>
+</div>
+
+</body>
+</html>

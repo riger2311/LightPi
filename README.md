@@ -1,5 +1,5 @@
 # LightPi
-A simple node server to control some led lights, connected to the GPIOs of a Raspberry Pi. This Repo is not maintained, but feel free to use this code according to the GNU GPL v3 license.
+A simple node server to control some led lights via a webbrowser. The LEDs are connected to the GPIOs of a Raspberry Pi. This Repo is not maintained, but feel free to use this code according to the GNU GPL v3 license.
 
 ## Functionality:
 
@@ -16,5 +16,5 @@ A simple node server to control some led lights, connected to the GPIOs of a Ras
 
 ## Requirements:
 
-You will need [node.js](https://nodejs.org/en/), the [express](http://expressjs.com/) framework and eugeneware's [wiringPi](https://github.com/eugeneware/wiring-pi) library.
+You will need [node.js](https://nodejs.org/en/), the [express](http://expressjs.com/) framework with the [body-parser](https://github.com/expressjs/body-parser) and eugeneware's [wiringPi](https://github.com/eugeneware/wiring-pi) library.
 
