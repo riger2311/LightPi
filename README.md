@@ -18,3 +18,28 @@ A simple node server to control some led lights via a webbrowser. The LEDs are c
 
 You will need [node.js](https://nodejs.org/en/), the [express](http://expressjs.com/) framework with the [body-parser](https://github.com/expressjs/body-parser) and eugeneware's [wiringPi](https://github.com/eugeneware/wiring-pi) library.
 
+## Autostart:
+
+To start the server when the after the Pi booted, you can add a startup script to your <code>/etc/rc.local</code>. Every script in there will be run with <code>sudo</code>-rights, so you don't need that in your script.
+
+First create a script with the content
+<code>
+node /full/path/to/cloned/repository/node_server.js &
+<code>
+
+Ensure that your script is executable with <code>chmod +x yourStartScript.sh</code>.
+
+Then, add your script to </code>/etc/rc.local</code>, right before <code>exit</code> is called, so that it looks like 
+<code>
+#!/bin/sh -e
+
+# Print the IP address
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+fi
+
+/path/to/your/script/yourStartScript.sh
+
+exit 0
+</code>
