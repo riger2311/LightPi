@@ -20,17 +20,19 @@ You will need [node.js](https://nodejs.org/en/), the [express](http://expressjs.
 
 ## Autostart:
 
-To start the server when the after the Pi booted, you can add a startup script to your <code>/etc/rc.local</code>. Every script in there will be run with <code>sudo</code>-rights, so you don't need that in your script.
+To start the server when the after the Pi booted, you can add a startup script to your <code>/etc/rc.local</code>. Every script in there will be executed with <code>sudo</code>-rights, so you don't need that in your script.
 
 First create a script with the content
-<code>
+
+```
 node /full/path/to/cloned/repository/node_server.js &
-<code>
+```
 
 Ensure that your script is executable with <code>chmod +x yourStartScript.sh</code>.
 
-Then, add your script to </code>/etc/rc.local</code>, right before <code>exit</code> is called, so that it looks like 
-<code>
+Then, add your script to <code>/etc/rc.local</code>, right before <code>exit</code> is called, so that it looks like 
+
+```
 #!/bin/sh -e
 
 # Print the IP address
@@ -42,4 +44,4 @@ fi
 /path/to/your/script/yourStartScript.sh
 
 exit 0
-</code>
+```
